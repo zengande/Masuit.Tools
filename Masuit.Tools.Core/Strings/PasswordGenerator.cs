@@ -10,7 +10,7 @@ namespace Masuit.Tools.Core.Strings
     {
         private static string _numbers = "0123456789";
         private static string _symbols = ",./<>?;':\"[]\\{}|`~!@#$%^&*()_+-=";
-        private static string _letter = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+        private static string _letters = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
         /// <summary>
         /// 生成密码
@@ -25,7 +25,7 @@ namespace Masuit.Tools.Core.Strings
         /// <returns></returns>
         public static string Generate(PasswordOptions options)
         {
-            var source = new StringBuilder(_letter);
+            var source = new StringBuilder(_letters);
             var password = new StringBuilder();
             if (options.HasNumber)
             {
