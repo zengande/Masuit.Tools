@@ -901,6 +901,12 @@ Random rnd = new Random();
 int num = rnd.StrictNext();//产生真随机数
 double gauss = rnd.NextGauss(20,5);//产生正态分布的随机数
 ```
+### 36.随机密码
+```csharp
+var password1 = PasswordGenerator.Generate(); // new PasswordOptions(10,false,false);
+var password2 = PasswordGenerator.Generate(new PasswordOptions(20,true,true));
+```
+
 # Asp.Net MVC和Asp.Net Core的支持断点续传和多线程下载的ResumeFileResult
 
 允许你在ASP.NET Core中通过MVC/WebAPI应用程序传输文件数据时使用断点续传以及多线程下载。

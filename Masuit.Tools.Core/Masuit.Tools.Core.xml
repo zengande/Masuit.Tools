@@ -724,6 +724,57 @@
             <param name="key">键</param>
             <returns>对象</returns>
         </member>
+        <member name="T:Masuit.Tools.Core.Strings.PasswordGenerator">
+            <summary>
+            随机密码生成器
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Core.Strings.PasswordGenerator.Generate">
+            <summary>
+            生成密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Core.Strings.PasswordGenerator.Generate(Masuit.Tools.Core.Strings.PasswordOptions)">
+            <summary>
+            生成密码
+            </summary>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Masuit.Tools.Core.Strings.PasswordOptions">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Strings.PasswordOptions.Default">
+            <summary>
+            默认配置
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Core.Strings.PasswordOptions.#ctor(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            构造
+            </summary>
+            <param name="length">密码长度</param>
+            <param name="hasNumber">是否包含数字</param>
+            <param name="hasSymbol">是否包含符号</param>
+        </member>
+        <member name="P:Masuit.Tools.Core.Strings.PasswordOptions.Length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Strings.PasswordOptions.HasNumber">
+            <summary>
+            是否包含数字
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Strings.PasswordOptions.HasSymbol">
+            <summary>
+            是否包含符号
+            </summary>
+        </member>
         <member name="T:Masuit.Tools.Core.Validator.ComplexPassword">
             <summary>
             强密码验证
